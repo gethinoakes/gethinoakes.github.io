@@ -91,7 +91,7 @@ main
 ------------*/
 main {
 	width: 100vw;
-	&.home {
+	&.posts {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -174,17 +174,65 @@ header {
 }
 
 .post {
+	min-width: 350px;
+	height: 300px;
+	background-position: center center;
+	background-size: cover;
+	flex-grow: 3;
+	padding: 0;
+	border: none;
 
+	&:nth-of-type(even) {
+		flex-basis: 30%;
+	}
+
+	&:nth-of-type(odd) {
+		flex-basis: 35%;
+	}
+
+	@media screen and (max-width: 1170px) {
+		&:nth-of-type(even), &:nth-of-type(odd) {
+			flex-basis: 50%;
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		&:nth-of-type(even), &:nth-of-type(odd) {
+			flex-basis: 100%;
+		}
+	}
 }
 
 .post_overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	transition: all 0.25s ease;
+	display: flex;
+	align-items: center;
 
+	&:hover {
+		background: rgba(0, 0, 0, 0.25);
+		box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.20);
+		cursor: pointer;
+	}
+
+	&.single {
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: none;
+		cursor: default;
+	}
 }
 
 .post_content {
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 
 	.post_meta {
-
+		font-size: $body_font-size * 0.85;
+		text-transform: uppercase;
 	}
 
 	.post_title {
@@ -192,7 +240,8 @@ header {
 	}
 
 	.post_excerpt {
-
+		color: #fff;
+		text-shadow: none;
 	}
 }
 
