@@ -10,53 +10,7 @@ dl, dd, ol, ul, figure {
 
 
 
-/*------------
-fonts
-------------*/
-h1, h2, h3, h4 {
-    font-family: $heading_font;
-    font-size: $heading_font-size;
-    font-weight: $heading_font-weight;
-    text-transform: uppercase;
-}
 
-body, ul, a {
-    font-family: $body_font;
-    font-size: $body_font-size;
-    font-weight: $body_font-weight;
-    text-decoration: none;
-    line-height: 1.5;
-}
-
-pre, code {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 0.95em;
-}
-
-
-/*------------
-code formatting
-------------*/
-code, pre {
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
 
 
 /**

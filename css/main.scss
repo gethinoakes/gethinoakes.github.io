@@ -1,82 +1,48 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+/*------------
+imports
+------------*/
+@import "reset", "syntax-highlighting"; // "base", "layout"
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:600,400);
 
 
-
-// Our variables
+/*------------
+variables
+------------*/
 $heading_font: "Helvetica Neue", Helvetica, 'Source Sans Pro', Arial, sans-serif;
 $heading_font-size: 2em;
-$heading_font-weight: bold;
+$heading_font-weight: 600;
 
 $body_font: 'Open Sans', sans-serif;
 $body_font-size: 1em;
 $body_font-weight: normal;
+$body_font-color: #000;
 
+$spacing: 30px;
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from _sass
-@import
-        "reset",
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
-
-// import fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:600,400);
 
 /*------------
-#block elements
-------------
-h1,
-h2,
-h3,
-h4 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	font-weight: 600;
+fonts
+------------*/
+h1, h2, h3, h4 {
+    font-family: $heading_font;
+    font-size: $heading_font-size;
+    font-weight: $heading_font-weight;
+    text-transform: uppercase;
+    padding: $spacing / 2 0;
 }
 
+h2 {
+	font-size: $heading_font-size * 0.85;
+}
+
+h3 {
+	font-size: $heading_font-size * 0.65;
+}
+
+/*
 h1 {
 	font-size: 2em;
 }
@@ -98,6 +64,98 @@ h3 {
 	color: #0F0F0F;
 	font-size: 1.25em;
 }
+
+*/
+
+
+p, ul, a {
+    font-family: $body_font;
+    font-size: $body_font-size;
+    font-weight: $body_font-weight;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 0 0 $spacing / 3 0;
+}
+
+pre, code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: $body_font-size * 0.95;
+    margin: 0 0 $spacing / 3 0;
+}
+
+
+/*------------
+code formatting
+------------*/
+code, pre {
+    // border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+/*------------
+home
+------------*/
+header {
+	max-width: 650px;
+	margin: 25px auto;
+	font-family: $heading_font;
+
+	img {
+		width: 100px;
+		border-radius: 50%;
+		float: left;
+	}
+
+	p {
+		color: lighten($body_font-color, 15);
+		width: 650 - 120px;
+		float: left;
+		padding-left: $spacing - 10;
+
+		span, a, a:hover  {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: $body_font-color;
+			transition: opacity 0.5s;
+		}
+
+		a:hover {
+			opacity: 0.75;
+		}
+
+		.fa-twitter {
+			color: #55acee;
+		}
+
+		.fa-paper-plane {
+			color: #DF2935;
+		}
+	}
+}
+
+.page_nav {
+
+}
+
+
+/*
 
 p, span,
 .post_section_a,
