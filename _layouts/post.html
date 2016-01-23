@@ -1,15 +1,42 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+<div class="post" style="background-image: url('{{ site.baseurl }}/img/posts/{{ page.img }}');">
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+	<div class="post_overlay post_overlay-single">
+		
+		<nav class="post_nav">
+			{% if page.previous.url %} 
+				<a class="post_nav-prev" href="{{page.previous.url}}"><i class="fa fa-angle-left"></i> {{page.previous.title | truncatewords: 4}}</a> 
+			{% endif %} 
+			
+			<div class="post_nav-page">
+				<a href="{{ site.url }}">Home</a>
+		      {% for p in site.html_pages %}
+		          <a href="{{ p.url }}">{{ p.title }}</a>
+		      {% endfor %}
+			</div>
+			
+			{% if page.next.url %} 
+				<a class="post_nav-next" href="{{page.next.url}}">{{page.next.title | truncatewords: 4}} <i class="fa fa-angle-right"></i></a>
+			{% endif %} 
+		</nav>
+		
+		<div class="post_content">
+			<span class="post_meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{{ page.date | date: "%b %-d, %Y" }}</span>
+			<h1 class="post_title">{{ page.title }}</h1>
+		</div>
+	</div>
+	
+</div>
 
+<article class="post_content post_content-single">
+	{{ content }}
+	
+	{% include share_post.html %}
+	
+	{% include related_posts.html %}
+	
+	{% include disqus.html %}
 </article>
