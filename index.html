@@ -1,23 +1,17 @@
 ---
 layout: home
+tags: gethin, oakes, gethin oakes, blog, software, developer, software developer, programming, technology, apple, ios, javascript, angular, jekyll
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% for post in site.posts %}
+<a class="post" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{ site.baseurl }}/img/posts/{{ post.img }}');">
+  <div class="post_overlay">
+    <div class="post_content">
+      <span class="post_meta">{{ post.date | date: "%b %-d, %Y" }} - {{ post.category }}</span>
+<!--      <span class="post_tags"></span> -->
+      <h1 class="post_title">{{ post.title | truncatewords: 5 }}</h1>
+      <p class="post_excerpt">{{ post.excerpt | strip_html | truncatewords: 10 }}</p>
+    </div>
+  </div>
+</a>
+{% endfor %}
