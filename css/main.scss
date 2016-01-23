@@ -42,32 +42,6 @@ h3 {
 	font-size: $heading_font-size * 0.65;
 }
 
-/*
-h1 {
-	font-size: 2em;
-}
-
-h2,
-h3 {
-	padding: 15px 0 5px 0;
-	&:first-of-type {
-		padding: 0 0 5px 0;
-	}
-}
-
-h2 {
-	font-size: 1.75em;
-	color: #000;
-}
-
-h3 {
-	color: #0F0F0F;
-	font-size: 1.25em;
-}
-
-*/
-
-
 p, ul, a {
     font-family: $body_font;
     font-size: $body_font-size;
@@ -78,10 +52,9 @@ p, ul, a {
     padding: 0 0 $spacing / 3 0;
 }
 
-pre, code {
-    font-family: "Courier New", Courier, monospace;
-    font-size: $body_font-size * 0.95;
-    margin: 0 0 $spacing / 3 0;
+a {
+	border-bottom: 2px solid transparent;
+    transition: 0.5s ease;
 }
 
 
@@ -89,6 +62,9 @@ pre, code {
 code formatting
 ------------*/
 code, pre {
+	font-family: "Courier New", Courier, monospace;
+    font-size: $body_font-size * 0.95;
+    margin: 0 0 $spacing / 3 0;
     // border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
@@ -178,9 +154,6 @@ header {
 
 		&.active {
 			color: blue;
-			&:hover {
-				// border-bottom: 2px solid blue;
-			}
 		}
 	}
 
