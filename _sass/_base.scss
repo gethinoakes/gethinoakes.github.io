@@ -10,9 +10,29 @@ dl, dd, ol, ul, figure {
 
 
 
+/*------------
+fonts
+------------*/
+h1, h2, h3, h4 {
+    font-family: $heading_font;
+    font-size: $heading_font-size;
+    font-weight: $heading_font-weight;
+    text-transform: uppercase;
+}
+
+body, ul, a {
+    font-family: $body_font;
+    font-size: $body_font-size;
+    font-weight: $body_font-weight;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+
+
 /**
  * Basic styling
- */
+
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -24,18 +44,19 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
 }
+*/
 
 
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
+// /**
+//  * Set `margin-bottom` to maintain vertical rhythm
+//  */
+// h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre,
+// ul, ol, dl, figure,
+// %vertical-rhythm {
+//     margin-bottom: $spacing-unit / 2;
+// }
 
 
 
@@ -49,78 +70,78 @@ img {
 
 
 
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
+// /**
+//  * Figures
+//  */
+// figure > img {
+//     display: block;
+// }
 
-figcaption {
-    font-size: $small-font-size;
-}
+// figcaption {
+//     font-size: $small-font-size;
+// }
 
 
 
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
-}
+// ul, ol {
+//     margin-left: $spacing-unit;
+// }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
+// li {
+//     > ul,
+//     > ol {
+//          margin-bottom: 0;
+//     }
+// }
 
 
 
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-}
+// h1, h2, h3, h4, h5, h6 {
+//     font-weight: $base-font-weight;
+// }
 
 
 
 /**
  * Links
  */
-a {
-    color: $brand-color;
-    text-decoration: none;
+// a {
+//     color: $brand-color;
+//     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+//     &:visited {
+//         color: darken($brand-color, 15%);
+//     }
 
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
+//     &:hover {
+//         color: $text-color;
+//         text-decoration: underline;
+//     }
+// }
 
 
 
 /**
  * Blockquotes
  */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+// blockquote {
+//     color: $grey-color;
+//     border-left: 4px solid $grey-color-light;
+//     padding-left: $spacing-unit / 2;
+//     font-size: 18px;
+//     letter-spacing: -1px;
+//     font-style: italic;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
+//     > :last-child {
+//         margin-bottom: 0;
+//     }
+// }
 
 
 
@@ -155,52 +176,52 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+// .wrapper {
+//     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+//     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding-right: $spacing-unit;
+//     padding-left: $spacing-unit;
+//     @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
+//     @include media-query($on-laptop) {
+//         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+//         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
 
 
 
 /**
  * Clearfix
  */
-%clearfix {
+// %clearfix {
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
+//     &:after {
+//         content: "";
+//         display: table;
+//         clear: both;
+//     }
+// }
 
 
 
 /**
  * Icons
  */
-.icon {
+// .icon {
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+//     > svg {
+//         display: inline-block;
+//         width: 16px;
+//         height: 16px;
+//         vertical-align: middle;
 
-        path {
-            fill: $grey-color;
-        }
-    }
-}
+//         path {
+//             fill: $grey-color;
+//         }
+//     }
+// }
