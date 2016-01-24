@@ -11,9 +11,13 @@ github_username:  gethinoakes
 
 # Build settings
 markdown: kramdown
-permalink: :year/:month/:day/:title
+permalink: :title
 paginate: 10
 paginate_path: "/page:num/"
+include: ["_extrapages"]
+
+collections:
+  - extrapages
 
 sass:
   style: compressed
