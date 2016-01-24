@@ -57,6 +57,10 @@ a {
     transition: 0.5s ease;
 }
 
+.emoji {
+	width: 15px !important;
+}
+
 
 /*------------
 code formatting
@@ -268,6 +272,10 @@ full post
 		color: #fff;
 		text-decoration: none;
 		font-size: $body_font-size * 0.85;
+	}
+
+	a:hover {
+		opacity: 0.75;
 	}
 
 	.previous_post, .site_pages, .next_post {
