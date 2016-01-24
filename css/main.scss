@@ -60,9 +60,10 @@ a {
 	border-bottom: 2px solid transparent;
     transition: 0.5s ease;
     font-weight: 600;
+    color: #F50E23;
 
     &:hover {
-    	opacity: 0.75;
+    	color: darken(#F50E23, 50%);
     }
 }
 
@@ -302,6 +303,7 @@ full post
 
 	.previous_post, .next_post {
 		flex-basis: 25%;
+		font-weight: normal;
 	}
 
 	.previous_post i {
@@ -393,6 +395,11 @@ full post
 
 		div {
 			flex-basis: percentage(100/3);
+
+			.meta {
+				font-size: $body_font-size * 0.85;
+				color: #aaa;
+			}
 		}
 	}
 }
