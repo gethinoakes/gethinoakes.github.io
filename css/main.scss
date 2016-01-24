@@ -59,6 +59,11 @@ p, ul, a, time {
 a {
 	border-bottom: 2px solid transparent;
     transition: 0.5s ease;
+    font-weight: 600;
+
+    &:hover {
+    	opacity: 0.75;
+    }
 }
 
 .emoji {
@@ -340,8 +345,11 @@ full post
 		border-bottom: 2px solid #f0f0f0;
 	}
 
-	.social {
+	.social, .related_posts {
 		padding: $spacing / 3 0 0 0;
+	}
+
+	.social {
 		font-size: $body_font-size * 0.85;
 
 		a {
@@ -371,4 +379,12 @@ full post
 		}
 	}
 
+	.related_posts {
+		display: flex;
+		flex-direction: row;
+
+		div {
+			flex-basis: percentage(100/3);
+		}
+	}
 }
