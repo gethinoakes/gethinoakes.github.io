@@ -56,6 +56,11 @@ p, ul, a, time {
     padding: 0 0 $spacing / 3 0;
 }
 
+li {
+	list-style: disc;
+    margin-left: 20px;
+}
+
 a {
 	border-bottom: 2px solid transparent;
     transition: 0.5s ease;
