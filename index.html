@@ -3,7 +3,7 @@ layout: home
 tags: gethin, oakes, gethin oakes, blog, software, developer, software developer, programming, technology, apple, ios, javascript, angular, jekyll
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <a class="post" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{ site.baseurl }}/img/posts/{{ post.img }}');">
   <div class="post_overlay">
     <div class="post_content">
@@ -15,3 +15,40 @@ tags: gethin, oakes, gethin oakes, blog, software, developer, software developer
   </div>
 </a>
 {% endfor %}
+
+<div class="pagination">
+	<div class="previous_page">
+		{% if paginator.previous_page %}
+		<a class="pagination-button" href="{{ paginator.previous_page_path }}">
+          <i class="fa fa-angle-left"></i>
+        </a>
+		{% endif %}
+	</div>
+
+	<ul>
+	{% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li>
+          <span id="current-page">{{ page }}</span>
+        </li>
+      {% elsif page == 1 %}
+        <li>
+          <a href="/">{{ page }}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+	</ul>
+
+	<div class="next_page">
+		{% if paginator.next_page %}
+		<a class="pagination-button" href="{{ paginator.previous_page_path }}">
+          <i class="fa fa-angle-right"></i>
+        </a>
+		{% endif %}
+	</div>
+
+</div>

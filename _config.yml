@@ -12,3 +12,12 @@ github_username:  gethinoakes
 # Build settings
 markdown: kramdown
 permalink: :year/:month/:day/:title
+paginate: 10
+paginate_path: "/page:num/"
+
+sass:
+  style: compressed
+
+gems:
+  - octopress-autoprefixer
+  - jekyll-paginate
