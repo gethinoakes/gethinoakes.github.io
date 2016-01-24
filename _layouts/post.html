@@ -8,10 +8,10 @@ layout: default
 
 		<nav class="post_nav">
 			{% if page.previous.url %}
-				<a class="post_nav-prev" href="{{page.previous.url}}"><i class="fa fa-angle-left"></i> {{page.previous.title | truncatewords: 4}}</a>
+				<a class="previous_post" href="{{page.previous.url}}"><i class="fa fa-angle-left"></i> {{page.previous.title | truncatewords: 4}}</a>
 			{% endif %}
 
-			<div class="post_nav-page">
+			<div class="site_pages">
 				<a href="{{ site.url }}">Home</a>
 		      {% for p in site.html_pages %}
 		          <a href="{{ p.url }}">{{ p.title }}</a>
@@ -19,7 +19,7 @@ layout: default
 			</div>
 
 			{% if page.next.url %}
-				<a class="post_nav-next" href="{{page.next.url}}">{{page.next.title | truncatewords: 4}} <i class="fa fa-angle-right"></i></a>
+				<a class="next_post" href="{{page.next.url}}">{{page.next.title | truncatewords: 4}} <i class="fa fa-angle-right"></i></a>
 			{% endif %}
 		</nav>
 
