@@ -7,7 +7,7 @@ tags: gethin, oakes, gethin oakes, blog, software, developer, software developer
 <a class="post" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{ site.baseurl }}/img/posts/{{ post.img }}');">
   <div class="post_overlay">
     <div class="post_content">
-      <span class="post_meta">{{ post.date | date: "%b %-d, %Y" }} - {{ post.category }}</span>
+      <span class="post_meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> - {{ post.category }}</span>
 <!--      <span class="post_tags"></span> -->
       <h1 class="post_title">{{ post.title | truncatewords: 5 }}</h1>
       <p class="post_excerpt">{{ post.excerpt | strip_html | truncatewords: 10 }}</p>
@@ -15,4 +15,3 @@ tags: gethin, oakes, gethin oakes, blog, software, developer, software developer
   </div>
 </a>
 {% endfor %}
-

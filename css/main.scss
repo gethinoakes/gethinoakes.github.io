@@ -227,8 +227,9 @@ header {
 .post_content {
 	color: #fff;
 	text-align: center;
-	margin: 0 auto;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	padding: 0 $spacing / 2;
 
 	.post_meta {
 		font-size: $body_font-size * 0.85;
@@ -239,9 +240,12 @@ header {
 
 	}
 
+	p {
+		text-shadow: none;
+	}
+
 	.post_excerpt {
 		color: #fff;
-		text-shadow: none;
 	}
 }
 
