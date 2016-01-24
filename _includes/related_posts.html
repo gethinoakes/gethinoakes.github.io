@@ -1,9 +1,9 @@
 <section class="post_section">
-	<h4 class="post_section_header">Related Posts</h4>
+	<h4 class="header">Related Posts</h4>
 	{% for post in site.related_posts limit: 3 %}
-	<div class="post_section-related">
-		<a class="post_section_a" href="{{ post.url }}">{{ post.title }}</a>
-		<p class="post_section_meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+	<div class="related_posts">
+		<a href="{{ post.url }}">{{ post.title }}</a>
+		<p class="meta">{{ post.date | date: "%b %-d, %Y" }}</p>
 	<!-- 	<p class="related_post tags">{{ post.tags }}</p> -->
 	</div>
 	{% endfor %}
