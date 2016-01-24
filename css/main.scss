@@ -113,7 +113,7 @@ main {
 
 
 /*------------
-home
+header
 ------------*/
 header {
 	max-width: 650px;
@@ -186,6 +186,10 @@ header {
 
 }
 
+
+/*------------
+home-posts
+------------*/
 .post {
 	min-width: 350px;
 	height: 300px;
@@ -194,6 +198,10 @@ header {
 	flex-grow: 3;
 	padding: 0;
 	border: none;
+
+	&:hover {
+		opacity: 1;
+	}
 
 	&:nth-of-type(even) {
 		flex-basis: 30%;
