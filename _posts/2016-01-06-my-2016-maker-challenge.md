@@ -21,7 +21,7 @@ I'm not going to go in to detail because I'd rather keep what I'm going to be wo
 - Minimum 24 Blog Posts
 - 1 Mac App
 - 3 iOS Apps
-- Produce a Beginner's Web Development Course - minimum 20 videos, doesthis count as 20 creations? ;)
+- Produce a Beginner's Web Development Course - minimum 20 videos, does this count as 20 creations? ;)
 - 2 AngularJS2 Web Apps
 - 1 Big-Scale Web Service
 - 3 WordPress Themes

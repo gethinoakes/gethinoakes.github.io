@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "A New Year, a New me?"
-date:   2016-01-01 18:29:00 +0000
+date:   2016-01-01
 category: personal
-tags: [new year, 2016, create, products, product, developer, software, blog, ios, mac, apps, development, resolutions]
+tags: [new year, 2016, developer, software, blog, ios, mac, apps, development, resolutions]
 img: newyear.jpg
 ---
 

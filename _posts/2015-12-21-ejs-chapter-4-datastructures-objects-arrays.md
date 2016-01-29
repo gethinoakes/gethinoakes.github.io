@@ -7,12 +7,14 @@ category: development, studying
 tags: eloquent javascript, javascript, es6, es5, book, development, studying, developer, software, book notes
 ---
 
-<h2>Data Sets</h2>
+## Data Sets
 Arrays are used to hold data sets in square brackets.
-{% highlight javascript linenos %}
+
+```js
 var listOfNumbers = [2, 3, 5, 7, 11];
 listOfnumbers[0]; // 2
-{% endhighlight %}
+```
+
 ## Properties
 myString.length, Math.max etc. are expressions that access a property of some value. <code>.length</code> accesses the length property of the string for example.
 null and undefined don't have any properties and will return as error if you try, almost all other JS values do.
