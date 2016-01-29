@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "I Passed Probation"
-date:   2016-01-16 12:15:00 +0000
+date:   2016-01-16
 category: personal
-tags: avecto, software developer, software, probation, programming, developer
+tags: [avecto, software developer, software, probation, programming, developer]
 img: paperthrow.jpg
 ---
 

@@ -3,13 +3,15 @@ layout: post
 title:  "Headphone Jack Petition"
 date:   2016-01-08
 category: opinion
-tags: apple, opinion, iphone, iphone 7, headphones, headphone jack, petition
+tags: [apple, opinion, iphone, iphone 7, headphones, headphone jack, petition]
 img: headphones.jpg
 ---
 
-<strong>Back story:</strong> There are rumours going around that Apple is going to get rid of the 3.5mm headphone jack in the iPhone in the next release (iPhone 7 if history is anything to go by).
+## Back Story
+There are rumours going around that Apple is going to get rid of the 3.5mm headphone jack in the iPhone in the next release (iPhone 7 if history is anything to go by).
 
-I just stumbled across a pretty ridiculous petition that as I write this has 217,056 signatures. It's titled "<a href="https://action.sumofus.org/a/iphone-headphone-jack/" target="_blank">Apple is ditching the standard headphone jack to screw consumers and the planet</a>". And it's pretty fucking stupid.
+## The Petition
+I just stumbled across a pretty ridiculous petition that as I write this has 217,056 signatures. It's titled [Apple is ditching the standard headphone jack to screw consumers and the planet](https://action.sumofus.org/a/iphone-headphone-jack/)". And it's pretty fucking stupid.
 
 Apple doesn't ditch technology to screw over their millions of consumers... or the planet. They do it because they believe that the technology has had its day and it's time to move on to better things. I won't pretend to know all about the headphone jack or how using the lightning connector would offer better sound output, but the fact is the headphone jack is old. It's been around for as long as I can remember and if Apple is going to get rid of it they do so hoping to make their devices better.
 

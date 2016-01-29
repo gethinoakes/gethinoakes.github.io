@@ -3,7 +3,7 @@ layout: post
 title:  "A New Year, a New me?"
 date:   2016-01-01 18:29:00 +0000
 category: personal
-tags: new year, 2016, create, products, product, developer, software, blog, ios, mac, apps, development, resolutions
+tags: [new year, 2016, create, products, product, developer, software, blog, ios, mac, apps, development, resolutions]
 img: newyear.jpg
 ---
 
@@ -14,7 +14,7 @@ Secondly, if you've been here before - you may have noticed the place looks a bi
 
 There was the sidebar, and then the posts to the right of that. I kept the width of the posts to a minimum so that text lines weren't too long. Because of this there was just masses of empty space and on my monitor this was more than half the page.
 
-<img src="http://www.gethinoakes.com/wp-content/uploads/2016/01/Screenshot-2016-01-01-22.56.25-1-1024x513.png" alt="v2" width="640" height="321" class="aligncenter size-large wp-image-258">
+![new design](http://www.gethinoakes.com/wp-content/uploads/2016/01/Screenshot-2016-01-01-22.56.25-1-1024x513.png)
 
 So I decided to go with this fresh new design, it's a current trend and I can see why because it keeps things clean with good use of white space and has a minimalist feel which I love.
 
@@ -23,7 +23,7 @@ I also took out clutter that I didn't feel was needed such as the extra pages ab
 It still needs a bit of work, mainly so it works correctly on mobile devices... but I wanted to get it up today to start the new year with.
 
 ## New Year Resolutions
-Everybody makes new years resolutions, but hardly anybody follows through with them. In fact I saw <a href="http://www.statisticbrain.com/new-years-resolution-statistics/" target="_blank">some statistics</a> the other day that only 8% do... which isn't too hard to believe.
+Everybody makes new years resolutions, but hardly anybody follows through with them. In fact I saw [some statistics](http://www.statisticbrain.com/new-years-resolution-statistics/) the other day that only 8% do... which isn't too hard to believe.
 
 I'm going to try to be part of that 8% in 2016. I have a lot that I want to achieve this year, maybe too much but I really want to spend the year working on myself... as hippy as that sounds.
 
@@ -52,17 +52,17 @@ One way I am going to do this is to spend my evenings after work exercising and 
 
 Another is to use an app to keep track of my goals and mark when I do or do not do them on any given day. This way I can see visually at an instant if I am on a path to productivity or giving into laziness again.
 
-In regards to getting fit; I'm going to escape the treadmills and start running outside again, 3 days a week following a 10k plan which lasts 14 weeks but I plan to repeat each week as I'm currently so unfit so it will take me longer.&nbsp;
+In regards to getting fit; I'm going to escape the treadmills and start running outside again, 3 days a week following a 10k plan which lasts 14 weeks but I plan to repeat each week as I'm currently so unfit so it will take me longer.
 
-I'm also going to attempt all of the popular P90 programs by BeachBody this year. There are 4 of them which are 90 days each so this would take more than the entire year. It is a massive challenge.&nbsp;
+I'm also going to attempt all of the popular P90 programs by BeachBody this year. There are 4 of them which are 90 days each so this would take more than the entire year. It is a massive challenge.
 
-In regards to becoming a better/proper JavaScript developer I am currently about halfway through the Eloquent JS book that I have been reading and making notes on. I plan to continue and I got a hard copy of the book for Christmas which will make it easier. From there I will focus on bettering my understanding of what I have learnt as well as going on to study AngularJS and Typescript in depth.&nbsp;
+In regards to becoming a better/proper JavaScript developer I am currently about halfway through the Eloquent JS book that I have been reading and making notes on. I plan to continue and I got a hard copy of the book for Christmas which will make it easier. From there I will focus on bettering my understanding of what I have learnt as well as going on to study AngularJS and Typescript in depth.
 
-I will need to get back into iOS programming to finish off my unfinished apps and also develop new apps I have ideas for. I'm going to skip Objective-C now and focus on learning Swift as it is now 2 years old and open sourced I believe it's a good time to leave Objective-C behind. This will mean re-writing what I have done in Swift but that will make for a good learning experience.&nbsp;
+I will need to get back into iOS programming to finish off my unfinished apps and also develop new apps I have ideas for. I'm going to skip Objective-C now and focus on learning Swift as it is now 2 years old and open sourced I believe it's a good time to leave Objective-C behind. This will mean re-writing what I have done in Swift but that will make for a good learning experience.
 
 I can't divulge much about the biggest project I want to undertake. But this will be developed as I grow as a developer.
 
-I'm going to try and expand myself as a freelancer and keep getting clients throughout the year to build my portfolio, I'm going to attempt this by putting myself out there more.&nbsp;
+I'm going to try and expand myself as a freelancer and keep getting clients throughout the year to build my portfolio, I'm going to attempt this by putting myself out there more.
 
 ## Summary
 What's most important this year to me is getting my health back on track and just creating, it doesn't really matter what it is. I just want to make things, I no longer want to just consume tv or games or whatever it is.
