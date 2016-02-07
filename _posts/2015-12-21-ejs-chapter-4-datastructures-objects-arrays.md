@@ -10,10 +10,10 @@ tags: eloquent javascript, javascript, es6, es5, book, development, studying, de
 ## Data Sets
 Arrays are used to hold data sets in square brackets.
 
-```js
+~~~js
 var listOfNumbers = [2, 3, 5, 7, 11];
 listOfnumbers[0]; // 2
-```
+~~~
 
 
 ## Properties
