@@ -2,7 +2,7 @@
 layout: post
 title:  "Eloquent JS Notes: Chapter 1 - Values, Types, and Operators"
 date:   2015-11-09 19:00:00 +0000
-img: js.jpg
+img: headers/js.jpg
 category: development, studying
 tags: eloquent javascript, javascript, es6, es5, book, development, studying, developer, software, book notes
 ---

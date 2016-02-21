@@ -2,7 +2,7 @@
 layout: post
 title:  Hello there...
 date:   2015-11-08
-img: manchester.jpg
+img: headers/manchester.jpg
 category: general
 tags: [gethin oakes, blog, software, developer, software developer, programming, technology, apple, ios, javascript]
 ---

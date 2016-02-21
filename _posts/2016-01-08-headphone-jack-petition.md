@@ -4,7 +4,7 @@ title:  "Headphone Jack Petition"
 date:   2016-01-08
 category: opinion
 tags: [apple, opinion, iphone, iphone 7, headphones, headphone jack, petition]
-img: headphones.jpg
+img: headers/headphones.jpg
 ---
 
 ## Back Story

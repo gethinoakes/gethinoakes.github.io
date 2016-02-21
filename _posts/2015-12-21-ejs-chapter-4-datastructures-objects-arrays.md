@@ -2,7 +2,7 @@
 layout: post
 title:  "EJS Chapter 4: Datastructures - Objects & Arrays"
 date:   2015-12-21
-img: js.jpg
+img: headers/js.jpg
 category: development, studying
 tags: eloquent javascript, javascript, es6, es5, book, development, studying, developer, software, book notes
 ---

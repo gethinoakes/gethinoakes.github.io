@@ -2,7 +2,7 @@
 layout: post
 title:  "I woke up in time"
 date:   2015-11-17
-img: clock.jpg
+img: headers/clock.jpg
 category: health & fitness
 tags: [health, fitness, running, workout, exercise, routine, early morning, diet, food, weight, body fat]
 ---

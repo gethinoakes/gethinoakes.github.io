@@ -2,7 +2,7 @@
 layout: post
 title:  "Facing Facts"
 date:   2015-11-30
-img: popweight-1.jpg
+img: headers/popweight-1.jpg
 category: health & fitness
 tags: [health, fitness, running, p90, beachbody, runkeeper, workout, exercise, routine, early morning, diet, food, weight, body fat]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Fitness Update"
 date:   2016-02-09
-img: apple-fitness.jpg
+img: headers/apple-fitness.jpg
 category: health & fitness
 tags: [health, fitness, running, exercise, diet, weight]
 ---

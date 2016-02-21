@@ -4,7 +4,7 @@ title:  "A New Year, a New me?"
 date:   2016-01-01
 category: personal
 tags: [new year, 2016, developer, software, blog, ios, mac, apps, development, resolutions]
-img: newyear.jpg
+img: headers/newyear.jpg
 ---
 
 First of all, Happy New Year everyone! I hope you all had a good one.

@@ -4,7 +4,7 @@ title:  "My 2016 Maker Challenge"
 date:   2016-01-06
 category: personal
 tags: [challenge, 2016, maker, create, products, product, developer, software, blog, ios, mac, apps, development, angular, wordpress]
-img: work.jpg
+img: headers/work.jpg
 ---
 
 I mentioned in my previous post the goals I have for 2016 and one of the major themes was that I just want to make stuff. I then came across [Justin Jackson's](https://twitter.com/mijustin) [2016 Maker Challenge](http://megamaker.co/challenge/) which is great because it's creating a community of people with the same goal.

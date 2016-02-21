@@ -2,7 +2,7 @@
 layout: post
 title:  "Eloquent JS Notes: Chapter 2 - Program Structure"
 date:   2015-11-11
-img: russiandolls.jpg
+img: headers/russiandolls.jpg
 category: development, studying
 tags: eloquent javascript, javascript, es6, es5, book, development, studying, developer, software, book notes
 ---

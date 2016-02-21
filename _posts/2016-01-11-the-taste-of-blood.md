@@ -2,7 +2,7 @@
 layout: post
 title:  "The Taste of Blood"
 date:   2016-01-11
-img: running.jpg
+img: headers/running.jpg
 category: health & fitness
 tags: [health, fitness, running, p90, beachbody, runkeeper, workout, exercise, routine, early morning, diet, food, weight, body fat]
 ---
