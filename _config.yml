@@ -25,3 +25,7 @@ sass:
 gems:
   - octopress-autoprefixer
   - jekyll-paginate
+
+github:
+  repo: gethinoakes/gethinoakes.github.io
+  branch: master
