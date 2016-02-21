@@ -1,8 +1,13 @@
 ---
 layout: post
 title:  "Fitness Update"
+<<<<<<< HEAD
 date:   2016-02-09
 img: apple-fitness.jpg
+=======
+date:   2016-01-11
+img: running.jpg
+>>>>>>> origin/master
 category: health & fitness
 tags: [health, fitness, running, exercise, diet, weight]
 ---
