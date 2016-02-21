@@ -23,3 +23,11 @@ I plan to keep delving into Jekyll not to only improve my personal site but also
 
 ### Speed
 As great as Wordpress is, it does come with a lot of dependencies that my blog simply doesn't need. Jekyll creates static content, almost as lightweight as it can get minus the loading of font awesome and google fonts.
+
+I ran tests on my Wordpress blog and my new Jekyll blog using [GTMetrix]() and [Pingdom]() which are both high up in the first 10 Google results when you search for 'Website Performance'.
+
+The results speak for themselves;
+![GTMetrix WordPress Test](/img/posts/performance_wordpress1.png)
+![GTMetrix Jekyll Test](/img/posts/performance_jekyll1.png)
+![Pingdom WordPress Test](/img/posts/performance_wordpress2.png)
+![Pingdom Jekyll Test](/img/posts/performance_jekyll2.png)

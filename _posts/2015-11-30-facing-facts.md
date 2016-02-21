@@ -28,6 +28,6 @@ Luckily I have a treadmill at home, so although I won't be able to continue my b
 
 I use (yet another) an app named PopWeight to track my stats. It's good because it tells you your progress in a way of suggesting how long it will take to reach your goal at your current weight and updates that estimate each time you weigh in.
 
-![PopWeight](/img/posts/popweight-1.jpg)
+![PopWeight](/img/posts/headers/popweight-1.jpg)
 
 At the moment it's saying 307 days, which is not good enough at all. Especially since last week it was 170 (still not good enough). Hopefully I can improve this estimate as the weeks go on.
