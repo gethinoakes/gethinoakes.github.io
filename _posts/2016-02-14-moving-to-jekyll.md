@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Moving to Jekyll"
-date:   2016-02-09
+date:   2016-02-14
 img: headers/jekyll.png
 category: General, Development
 tags: [jekyll, github, blog, wordpress, static]
