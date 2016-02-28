@@ -7,6 +7,10 @@
   <meta author="Gethin Oakes">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{{ page.tags }}">
+  
+  <link rel="icon" type="image/png" href="{{ "/img/favicon-32x32.png" | prepend: site.baseurl }}" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ "/img/favicon-16x16.png" | prepend: site.baseurl }}" sizes="16x16" />
+
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
