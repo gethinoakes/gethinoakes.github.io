@@ -3,7 +3,7 @@ layout: post
 title:  "Moving to Jekyll"
 date:   2016-02-09
 img: headers/jekyll.png
-category:
+category: General, Development
 tags: [jekyll, github, blog, wordpress, static]
 ---
 
@@ -43,5 +43,7 @@ As you can see, the biggest difference after switching to Jekyll is page load ti
 The number of requests has also decreased from 36/35 to 21, which also speeds things up.
 
 ## Where Now?
+I still want to be involved with Wordpress development, developing some themes this year and I'll also have clients that Wordpress would make sense for, but for me Jekyll is the way forward.
+
 I'm going to keep working on the performance of my blog, as it's an area of web development that I'd like to study and gain a greater understanding of. Also, I currently use a lot of large image files for post headers and on the home page too where posts are listed. These obviously put a big load on the server so I'm going to look into image compression to improve that or I might just get rid of the images all together... maybe yet another theme? I have a problem...
 
