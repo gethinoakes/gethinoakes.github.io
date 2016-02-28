@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A blog by a software developer, but not entirely defined by that fact.
   You can expect posts on programming, technology, apple, opinions and probably some rants.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gethinoakes.github.io" # the base hostname & protocol for your site
+url: "http://gethinoakes.com" # the base hostname & protocol for your site
 twitter_username: gethinoakes
 github_username:  gethinoakes
 
