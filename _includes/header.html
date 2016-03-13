@@ -19,30 +19,3 @@
     {% endif %}
   {% endfor %}
 </nav>
-
-{% else %}
-
-<header class="small">
-  <div class="container_flex">
-  <div class="logo">
-    <h1><a href="{{ site.url }}">gethin<span>oakes</span></a></h1>
-  </div>
-
-  <nav class="small">
-    <a href="{{ site.url }}">Posts</a>
-    {% for my_page in site.pages %}
-      {% if my_page.title %}
-        <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </nav>
-
-  <div class="social">
-    <a href="mailto:hello@gethinoakes.com?subject=gethinoakes.com"><i class="fa fa-paper-plane"></i></a>
-    <a href="https://twitter.com/gethinoakes" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-    <a href="https://github.com/gethinoakes" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-    <a href="https://uk.linkedin.com/in/gethinoakes" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i></a>
-  </div>
-  </div>
-</header>
-{% endif %}
