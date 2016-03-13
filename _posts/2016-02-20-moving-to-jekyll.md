@@ -35,7 +35,7 @@ I ran tests on my Wordpress blog and my new Jekyll blog using [GTMetrix](https:/
 - Pingdom WordPress Test
 ![Pingdom WordPress Test](/img/posts/performance_wordpress2.png)
 
-- Pingdom WordPress Test
+- Pingdom Jekyll Test
 ![Pingdom Jekyll Test](/img/posts/performance_jekyll2.png)
 
 As you can see, the biggest difference after switching to Jekyll is page load time, shaving about 85% off the Wordpress page load time. Page size has increased from Wordpress to Jekyll as I had more posts on the Jekyll version compared to Wordpress at time of testing.
