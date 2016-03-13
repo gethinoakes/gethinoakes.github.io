@@ -1,0 +1,343 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+/*------------
+variables
+------------*/
+$blue: #1873C9;
+$pink: #ED217C;
+$grey: #EBEBEB;
+
+
+/*------------
+imports
+------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Inconsolata), "reset", "syntax-highlighting";
+
+
+/*------------
+elemets
+------------*/
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.85em;
+	line-height: 1.5;
+	background: #fff;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $blue;
+
+    a {
+    	font-weight: 700;
+    	color: $blue;
+
+    	&:hover {
+			color: lighten($blue, 15);
+    	}
+    }
+}
+
+h2, h3 {
+	font-size: 1.75em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 0 0 0;
+
+    &:first-of-type {
+    	padding: 0;
+    }
+}
+
+h3 {
+	font-size: 1.5em;
+	padding: 0;
+}
+
+p {
+	padding: 5px 0;
+
+	&:first-of-type {
+		padding: 0 0 5px 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	font-weight: 400;
+	color: $pink;
+	transition: color 0.5s ease;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	padding: 10px 0;
+}
+
+
+/*------------
+header
+------------*/
+header {
+	border-top: 3px solid $blue;
+	background: lighten($grey, 6);
+	text-align: center;
+
+	img {
+		width: 100px;
+		border-radius: 50%;
+	}
+
+	span {
+		font-weight: 700;
+	}
+
+	&.small {
+		border-bottom: 1px solid $grey;
+		margin-bottom: 10px;
+
+		.container_flex {
+			display: flex;
+			align-items: center;
+		    width: 100%;
+		    max-width: 800px;
+		    margin: 0 auto;
+		}
+
+		.logo, nav, .social {
+			flex-basis: 33%;
+			// padding: 0 40px;
+		}
+
+		.logo h1 {
+			font-size: 1.5em;
+			text-align: left;
+
+			a {
+				color: #000;
+				font-weight: normal;
+
+				&:hover {
+					color: lighten(#000, 15);
+				}
+			}
+		}
+
+		.social {
+			text-align: right;
+
+			a {
+				padding-right: 10px;
+
+				&:last-of-type {
+					padding-right: 0;
+				}
+			}
+		}
+
+	}
+}
+
+.container {
+	padding: 10px 0;
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+nav {
+	padding: 10px 0;
+	text-align: center;
+	line-height: 1;
+
+	&.full {
+		border-top: 1px solid $grey;
+		border-bottom: 1px solid $grey;
+		margin-bottom: 20px;
+	}
+
+	a {
+		margin-right: 40px;
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+}
+
+
+/*------------
+posts
+------------*/
+.post_list {
+
+	li.post {
+		padding: 30px 0 25px;
+		border-bottom: 1px solid $grey;
+
+		&:first-of-type {
+			padding-top: 0;
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}
+
+.single_post {
+
+}
+
+.post_meta {
+	text-align: center;
+	font-size: 0.9em;
+	text-transform: capitalize;
+	color: darken($grey, 75);
+	padding: 3px 0 6px 0;
+
+	span {
+		padding-right: 10px;
+
+		i {
+			padding-right: 5px;
+		}
+
+		&:nth-of-type(2n) {
+			padding-right: 14px;
+		}
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+}
+
+.post_excerpt {
+	text-align: center;
+}
+
+.post ul li {
+	list-style-type: disc;
+	margin-left: 18px;
+}
+
+
+/*------------
+pagination
+------------*/
+.pagination {
+	// clear: both;
+	padding: 15px 0;
+	display: flex;
+	flex-direction: row;
+
+	.previous_page, .next_page {
+		flex-basis: 25%;
+	}
+
+	.previous_page {
+		text-align: right;
+	}
+
+	ul {
+		flex-basis: 50%;
+		text-align: center;
+		padding: 0;
+
+		li {
+			display: inline;
+			padding: 3px;
+			margin: 0 5px 0 0;
+
+			&.current {
+				color: $blue;
+				border-bottom: 1px solid darken($grey, 10);
+			}
+		}
+	}
+
+	.next_page {
+		text-align: left;
+	}
+}
+
+
+/*------------
+footer
+------------*/
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #333;
+	background: lighten($grey, 6);
+	border-top: 2px solid $blue;
+	// color: #fff;
+
+	.container {
+		padding: 15px 0;
+	}
+}
+
+
+/*------------
+responsive
+------------*/
+@media screen and(max-width: 950px) {
+	.container_flex {
+			width: 90% !important;
+		}
+}
+
+@media screen and(max-width: 650px) {
+	.container {
+		width: 90%;
+	}
+
+	header {
+		img {
+			width: 80px;
+		}
+
+		p {
+			// font-size: 0.9em;
+		}
+	}
+
+	nav a {
+		font-size: 0.9em;
+	}
+
+	header.small {
+		.logo, nav, .social {
+			// padding: 0 10px;
+			font-size: 0.85em;
+		}
+	}
+
+	header.small {
+		nav a {
+			margin-right: 20px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}

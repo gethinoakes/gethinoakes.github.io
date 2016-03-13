@@ -1,0 +1,29 @@
+<div class="pagination">
+  <div class="previous_page">
+    {% if paginator.previous_page %}
+    <a class="pagination-button" href="{{ paginator.previous_page_path }}">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    {% endif %}
+  </div>
+
+  <ul>
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <li class="current">{{ page }}</li>
+    {% elsif page == 1 %}
+      <li><a href="/">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <div class="next_page">
+    {% if paginator.next_page %}
+    <a class="pagination-button" href="{{ paginator.next_page_path }}">
+      <i class="fa fa-angle-right"></i>
+    </a>
+    {% endif %}
+  </div>
+</div>
