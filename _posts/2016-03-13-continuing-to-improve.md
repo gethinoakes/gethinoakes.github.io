@@ -3,8 +3,8 @@ layout: post
 title:  "Continuing to Improve"
 date:   2016-03-13
 category: General, Development
-desc: ""
-keywords: ""
+desc: "Optimizing Jekyll and decreasing page size by 98% and decreased the amount of HTTP requests by 13"
+keywords: "jekyll, image optimisation, page size, page speed, page load, wordpress, GTMetrix, Pingdom, WebPageTest"
 ---
 
 Just under a month ago I moved my blog from using Wordpress to Jekyll and described how in doing so I vastly increased the speed of my website, cutting about 85% off the page load time and decreasing server requests.
