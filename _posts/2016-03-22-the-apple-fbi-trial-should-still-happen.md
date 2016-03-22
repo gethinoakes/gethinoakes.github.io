@@ -7,11 +7,11 @@ desc: "The FBI requested to delay todays trial against Apple, and it's been acce
 keywords: "apple, fbi, america, guns, terrorism"
 ---
 
-[The FBI requested to delay todays trial against Apple, and it's been accepted.](http://www.theverge.com/2016/3/21/11279714/fbi-iphone-apple-trial-delay)
+[The FBI requested to delay today's trial against Apple, and it's been accepted.](http://www.theverge.com/2016/3/21/11279714/fbi-iphone-apple-trial-delay)
 
 The reason? Apparently an outsider has come to the aid of the FBI to unlock the iPhone that they claimed they couldn't without a backdoor from Apple, and they say if it proves successful they will no longer need Apple's help and so the whole trial can be cancelled. 
 
-To me, it seems that the FBI thought they might lose and so decided to save themselves the embarrasment, but doing this so late in the game screams embarrasment itself. 
+To me, it seems that the FBI thought they might lose and so decided to save themselves the embarrassment, but doing this so late in the game screams embarrassment itself. 
 
 But lets give them the benefit of the doubt, lets believe that someone has gone to them with a way to unlock that iPhone. The trial should still go ahead.
 
