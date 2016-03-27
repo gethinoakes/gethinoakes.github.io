@@ -27,7 +27,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.85em;
 	line-height: 1.5;
-	background: #fff;
+	// background: #f6f6f6;
 }
 
 h1 {
@@ -35,14 +35,14 @@ h1 {
 	text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    color: $blue;
+    // color: $blue;
 
     a {
     	font-weight: 700;
-    	color: $blue;
+    	// color: $blue;
 
     	&:hover {
-			color: lighten($blue, 15);
+			// color: lighten($blue, 15);
     	}
     }
 }
@@ -65,6 +65,7 @@ h3 {
 
 p {
 	padding: 5px 0;
+	color: lighten(#000, 5);
 
 	&:first-of-type {
 		padding: 0 0 5px 0;
@@ -96,7 +97,8 @@ header
 ------------*/
 header {
 	border-top: 3px solid $blue;
-	background: lighten($grey, 6);
+	border-bottom: 1px solid #EBEBEB;
+	// background: lighten($grey, 6);
 	text-align: center;
 
 	img {

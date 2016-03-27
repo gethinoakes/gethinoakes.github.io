@@ -2,7 +2,6 @@
 
 <header>
   <div class="container">
-    <img href="{{ site.url }}/" src="{{ site.url }}/img/gethinoakes.png" alt="me">
     <p>
       <span>Welcome</span>, my name is <span>Gethin Oakes</span>. I'm a <span>software developer</span> and this is my <span>blog</span>.
       You can expect posts on programming, technology, apple, opinions and probably some <span>rants.
@@ -12,14 +11,6 @@
     </p>
   </div>
 </header>
-<nav class="full">
-  <a href="{{ site.url }}">Posts</a>
-  {% for my_page in site.pages %}
-    {% if my_page.title %}
-      <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-    {% endif %}
-  {% endfor %}
-</nav>
 
 {% else if page.layout == 'default' %}
 
