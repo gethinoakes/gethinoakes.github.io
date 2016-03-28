@@ -33,3 +33,7 @@ gems:
 github:
   repo: gethinoakes/gethinoakes.github.io
   branch: master
+
+bitly:
+  username: gethinoakes
+  api_key: R_64089cf535ff43a7b0c3501df2856111
