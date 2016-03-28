@@ -91,6 +91,30 @@ img {
 	margin: 0 auto;
 }
 
+button {
+	padding: 10px;
+    border: none;
+    margin-right: 10px;
+
+    &:last-of-type {
+    	margin-right: 0;
+    }
+
+    &:focus {
+    	outline:0;
+    }
+
+    &.blue {
+    	background: $blue;
+    	color: #fff;
+    }
+
+    &.red {
+    	background: red;
+    	color: #fff;
+    }
+}
+
 
 /*------------
 header

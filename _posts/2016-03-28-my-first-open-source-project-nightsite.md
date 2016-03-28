@@ -15,4 +15,19 @@ So I tried this, but I wasn't happy with the result. Then I remembered [Flux](ht
 
 So instead of having a dark theme that would modify several styles and add load, I implemented on simple style to add a low opacity orange overlay to the entire site and reduce some of the strain to the users eyes.
 
+You can try it out here:
+
+<button onclick="enableNightSite()" class="blue">Enable NightSite</button>
+<button onclick="disableNightSite()" class="red">Disable NightSite</button>
+
 I thought others might appreciate this, so I published it to [GitHub](https://github.com/gethinoakes/NightSite){:target="_blank"}.
+
+<script>
+var enableNightSite = function() {
+    $('head').append('<link rel="stylesheet" type="text/css" href="{{ "/css/nightsite.css" | prepend: site.baseurl }}">');
+}
+
+var disableNightSite = function() {
+    $('link[rel=stylesheet][href="/css/nightsite.css"]').remove();
+}
+</script>
