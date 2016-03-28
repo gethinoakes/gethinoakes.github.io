@@ -21,6 +21,11 @@
     ga('send', 'pageview');
 
     </script>
+    <script>
+        var hour = new Date().getHours();
+        if (hour < 7 && hour > 19) {}
+        else { $('head').append('<link rel="stylesheet" type="text/css" href="{{ "/css/nightsite.css" | prepend: site.baseurl }}">');}
+    </script>
 
   </body>
 </html>

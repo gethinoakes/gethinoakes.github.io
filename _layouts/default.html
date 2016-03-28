@@ -24,11 +24,8 @@
 
     <script>
         var hour = new Date().getHours();
-        console.log(hour);
-        if (hour > 8 && hour < 19) {
-        } else {
-            $('head').append('<link rel="stylesheet" type="text/css" href="{{ "/css/protectyoureyes.css" | prepend: site.baseurl }}">');
-        }
+        if (hour < 7 && hour > 19) {}
+        else { $('head').append('<link rel="stylesheet" type="text/css" href="{{ "/css/nightsite.css" | prepend: site.baseurl }}">');}
     </script>
   </body>
 </html>
