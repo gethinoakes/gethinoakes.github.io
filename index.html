@@ -1,17 +1,15 @@
 ---
-layout: home
+layout: default
 ---
 
-<ul class="post_list">
-  {% for post in paginator.posts %}
-  <li class="post">
-    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+
+  {% for post in site.posts %}
+  <div class="post">
+    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     <div class="post_meta">
-      <span><i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}</span>
-      <span><i class="fa fa-inbox"></i>{{ post.category }}</span>
+      <span><img src="{{site.url}}/img/cal.png">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {% if post.category %}<span><img src="{{site.url}}/img/cat.png">{{ post.category }}</span>{% endif %}
     </div>
-    <p class="post_excerpt">{{ post.content | strip_html | truncatewords: 50 }}</p>
-  </li>
+    <p>{{ post.content | truncatewords: 100 | strip_html }}</p>
+  </div>
   {% endfor %}
-  {% include pagination.html %}
-</ul>

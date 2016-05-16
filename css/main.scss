@@ -1,118 +1,67 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-/*------------
-variables
-------------*/
-$blue: #1873C9;
-$pink: #ED217C;
-$grey: #EBEBEB;
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,700|Ubuntu+Mono), "syntax-highlighting";
 
 
 /*------------
-imports
+top-level
 ------------*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Inconsolata), "reset", "syntax-highlighting";
-
-
-/*------------
-elemets
-------------*/
-html, body {
-	height: 100%;
+html {
+	background: darken(#fff, 5) !important; //EDF2F4
 }
 
 body {
+	// background: red !important;
+}
+
+body {
+	// background: darken(#fff, 5); //EDF2F4
+	// font-family: Helvetica;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 0.85em;
-	line-height: 1.5;
-	// background: #f6f6f6;
+	// line-height: 2;
+	color: lighten(#000, 25); //2E2F2F
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Droid Serif', serif;
+	line-height: 1.2;
+	font-weight: bold;
+	color: lighten(#000, 15);
+
+	a:hover {
+		color: #EF233C;
+	}
 }
 
 h1 {
-	font-size: 2em;
-	text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    // color: $blue;
-
-    a {
-    	font-weight: 700;
-    	// color: $blue;
-
-    	&:hover {
-			// color: lighten($blue, 15);
-    	}
-    }
+	font-size: 3em;
 }
 
-h2, h3 {
-	font-size: 1.75em;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 15px 0 0 0;
-
-    &:first-of-type {
-    	padding: 0;
-    }
+h2 {
+	font-size: 2.5em;
 }
 
-h3 {
-	font-size: 1.5em;
-	padding: 0;
-}
-
-p {
-	padding: 5px 0;
-	color: lighten(#000, 5);
-
-	&:first-of-type {
-		padding: 0 0 5px 0;
-	}
+p, ul {
+	line-height: 2;
+	font-size: 1.2em;
 }
 
 a {
 	text-decoration: none;
-	font-weight: 400;
-	color: $pink;
-	transition: color 0.5s ease;
-
-	&:hover {
-		color: $blue;
-	}
+	color: lighten(#000, 15); //151515
+	transition: all 0.5s ease;
 }
 
-img {
-	width: auto;
-	max-width: 100%;
-	padding: 10px 0;
-	display: block;
+
+/*------------
+wrapper
+------------*/
+.wrapper {
+	width: 80%;
+	max-width: 1000px;
 	margin: 0 auto;
-}
-
-button {
-	padding: 10px;
-    border: none;
-    margin-right: 10px;
-
-    &:last-of-type {
-    	margin-right: 0;
-    }
-
-    &:focus {
-    	outline:0;
-    }
-
-    &.blue {
-    	background: $blue;
-    	color: #fff;
-    }
-
-    &.red {
-    	background: red;
-    	color: #fff;
-    }
 }
 
 
@@ -120,309 +69,196 @@ button {
 header
 ------------*/
 header {
-	border-top: 3px solid $blue;
-	border-bottom: 1px solid #EBEBEB;
-	// background: lighten($grey, 6);
+	color: lighten(#000, 15);
+	padding: 30px 30px;
 	text-align: center;
 
-	img {
-		width: 100px;
-		border-radius: 50%;
+	p {
+		line-height: 1.5;
 	}
 
 	span {
-		font-weight: 700;
+		font-weight: bold;
+		color: #000;
+
+		&.small {
+			font-weight: normal;
+			font-size: 75%;
+		}
 	}
 
-	&.small {
-		border-bottom: 1px solid $grey;
-		margin-bottom: 10px;
-
-		.container_flex {
-			display: flex;
-			align-items: center;
-		    width: 100%;
-		    max-width: 800px;
-		    margin: 0 auto;
-		}
-
-		.logo, nav, .social {
-			flex-basis: 33%;
-			// padding: 0 40px;
-		}
-
-		.logo h1 {
-			font-size: 1.5em;
-			text-align: left;
-
-			a {
-				color: #000;
-				font-weight: normal;
-
-				&:hover {
-					color: lighten(#000, 15);
-				}
-			}
-		}
-
-		.social {
-			text-align: right;
-
-			a {
-				padding-right: 10px;
-
-				&:last-of-type {
-					padding-right: 0;
-				}
-			}
-		}
-
+	a:hover {
+		color: #EF233C;
 	}
-}
-
-.container {
-	padding: 10px 0;
-	width: 80%;
-	max-width: 800px;
-	margin: 0 auto;
 }
 
 nav {
-	padding: 10px 0;
 	text-align: center;
-	line-height: 1;
+	padding-bottom: 30px;
 
-	&.full {
-		border-top: 1px solid $grey;
-		border-bottom: 1px solid $grey;
-		margin-bottom: 20px;
+	li a {
+		border-bottom: 1px solid darken(#fff, 25);
+		border-radius: 5px;
+		padding: 10px;
+		background: darken(#fff, 4);
+		transition: all 0.5s ease;
+
+		&:hover {
+			// border-bottom: 1px solid darken(#ccc, 25);
+			background: darken(#fff, 1);
+		}
 	}
+}
+
+
+/*------------
+post
+------------*/
+.post {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 40px;
 
 	a {
-		margin-right: 40px;
+		border-bottom: 1px solid darken(#fff, 15);
+		border-radius: 3px;
+		padding: 3px 6px;
 
-		&:last-of-type {
-			margin: 0;
+		&:hover {
+			background: darken(#fff, 8);
 		}
-	}
 }
 
-
-/*------------
-posts
-------------*/
-.post_list {
-
-	li.post {
-		padding: 30px 0 25px;
-		border-bottom: 1px solid $grey;
-
-		&:first-of-type {
-			padding-top: 0;
-		}
-
-		&:last-of-type {
-			border-bottom: none;
-		}
-	}
-}
-
-.single_post {
-
-}
-
-.post_meta {
-	text-align: center;
-	font-size: 0.9em;
-	text-transform: capitalize;
-	color: darken($grey, 75);
-	padding: 3px 0 6px 0;
-
-	span {
-		padding-right: 10px;
-
-		i {
-			padding-right: 5px;
-		}
-
-		&:nth-of-type(2n) {
-			padding-right: 14px;
-		}
-
-		&:last-of-type {
-			padding-right: 0;
-		}
-	}
-}
-
-.post_excerpt {
-	text-align: center;
-}
-
-.post ul li {
-	list-style-type: disc;
-	margin-left: 18px;
-}
-
-
-/*------------
-pagination
-------------*/
-.pagination {
-	// clear: both;
-	padding: 15px 0;
-	display: flex;
-	flex-direction: row;
-
-	.previous_page, .next_page {
-		flex-basis: 25%;
-	}
-
-	.previous_page {
-		text-align: right;
-	}
-
-	ul {
-		flex-basis: 50%;
+	h2, .post_meta {
 		text-align: center;
-		padding: 0;
+	}
 
-		li {
-			display: inline;
-			padding: 3px;
-			margin: 0 5px 0 0;
+	h2 a {
+		border: none;
 
-			&.current {
-				color: $blue;
-				border-bottom: 1px solid darken($grey, 10);
-			}
+		&:hover {
+			background: none;
 		}
 	}
 
-	.next_page {
-		text-align: left;
-	}
-}
-
-
-.post_section {
-	padding: 5px 0;
-
-	.header {
-		padding: 15px 0 5px 0;
-		border-bottom: 2px solid #f0f0f0;
-	}
-
-	.social, .related_posts {
-		padding:  10px 0 0 0;
-	}
-
-	.social {
-		// font-size: $body_font-size * 0.85;
-
-		a {
-			padding-right: 10px;
-			border: none;
-
-			&:hover {
-				border: none;
-				opacity: 0.85;
-			}
-
-			.fa-twitter-square {
-				color: #55acee;
-			}
-
-			.fa-facebook-square {
-				color: #3b5998;
-			}
-
-			.fa-google-plus-square {
-				color: #dc4e41;
-			}
-
-			.fa-envelope {
-				color: #DF2935;
-			}
+	&.post_full {
+		h1, .post_meta {
+			text-align: center;
 		}
-	}
 
-	.related_posts {
-		display: flex;
-		flex-direction: row;
+		.post_meta {
+			padding: 10px 0 20px 0;
+		}
 
-		div {
-			flex-basis: percentage(100/3);
+		h2 {
+			font-size: 2em;
+			text-align: left;
+			padding: 20px 0 5px;
 
-			.meta {
-				// font-size: $body_font-size * 0.85;
-				color: #aaa;
+			&:first-of-type {
+				padding-top: 0;
 			}
-		}
-	}
-}
-
-
-/*------------
-footer
-------------*/
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #333;
-	background: lighten($grey, 6);
-	border-top: 2px solid $blue;
-	// color: #fff;
-
-	.container {
-		padding: 15px 0;
-	}
-}
-
-
-/*------------
-responsive
-------------*/
-@media screen and(max-width: 950px) {
-	.container_flex {
-			width: 90% !important;
-		}
-}
-
-@media screen and(max-width: 650px) {
-	.container {
-		width: 90%;
-	}
-
-	header {
-		img {
-			width: 80px;
 		}
 
 		p {
-			// font-size: 0.9em;
+			margin-bottom: 15px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		ul {
+			list-style-type: disc;
+			margin-left: 22px;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 
-	nav a {
+	.post_meta {
+		display: block;
+		padding: 15px 0 10px 0;
+		margin-left: 22px;
+
+		span {
+			padding-right: 35px;
+		}
+
+		img {
+			width: 16px;
+			position: absolute;
+			margin: 0 0 0 -22px;
+		}
+	}
+}
+
+.post_footer {
+	width: 80%;
+	margin: 30px auto;
+	text-align: center;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.separator {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 2em;
+		line-height: 0;
+		letter-spacing: 5px;
+		color: darken(#fff, 10);
+	}
+
+	p {
 		font-size: 0.9em;
 	}
 
-	header.small {
-		.logo, nav, .social {
-			// padding: 0 10px;
-			font-size: 0.85em;
+	.social {
+		padding-top: 10px;
+	}
+
+	a {
+		border: none;
+
+		&:hover {
+			background: none;
 		}
 	}
 
-	header.small {
-		nav a {
-			margin-right: 20px;
+	img {
+		width: 30px !important;
+		transition: all 0.2s ease;
+
+		&:hover {
+			transform: translateY(2px) scale(0.99);
+		}
+	}
+
+	.recent {
+		padding-top: 8px;
+		line-height: 1;
+		font-size: 1em;
+
+		li {
+			display: inline-block;
+			padding-right: 15px;
 
 			&:last-of-type {
-				margin-right: 0;
+				padding-right: 0;
+			}
+
+			a:hover {
+				color: #EF233C;
+			}
+
+			.meta {
+				font-size: 0.8em;
+				color: darken(#fff, 50);
+				padding-top: 3px;
 			}
 		}
 	}

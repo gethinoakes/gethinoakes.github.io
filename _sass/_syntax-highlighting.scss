@@ -1,18 +1,18 @@
 .highlighter-rouge {
-    border: 1px solid #fff;
+    border: 1px solid darken(#fff, 6);
     border-radius: 3px;
-    background: #fafafa;
-    // margin: 10px 0;
+    background: darken(#fff, 4);
+    margin: 10px 0;
 
     pre {
-        padding: 5px;
+        padding: 8px;
         box-shadow: 0px 0px 2px #ccc;
     }
 }
 
 code {
-	font-family: 'Inconsolata';
-	font-size: 1em;
+    font-family: 'Ubuntu Mono', ;
+    font-size: 1em;
 }
 
 .highlight .hll { background-color: #ffffcc }
