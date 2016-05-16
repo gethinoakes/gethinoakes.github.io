@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Welcome, my name is Gethin Oakes. I'm a software developer and this is my blog. You can expect posts on programming, technology, apple, opinions and probably some rants.
 keywords: gethin, oakes, gethin oakes, freelance, freelance developer, developer, design, development, jekyll, sass, front end developer, front-end developer, blog, software, software developer, programming, technology, apple, ios, javascript, angular
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # dev mode
-# url: "http://gethinoakes.com" # the base hostname & protocol for your site
+# url: "http://localhost:4000" # dev mode
+url: "http://gethinoakes.com" # the base hostname & protocol for your site
 twitter_username: gethinoakes
 github_username:  gethinoakes
 
