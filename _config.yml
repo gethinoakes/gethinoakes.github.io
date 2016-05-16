@@ -20,8 +20,8 @@ github_username:  gethinoakes
 # Build settings
 markdown: kramdown
 permalink: :title
-paginate: 8
-paginate_path: "/page:num/"
+# paginate: 8
+# paginate_path: "/page:num/"
 
 sass:
   style: compressed
@@ -29,8 +29,12 @@ sass:
 gems:
   # - octopress-autoprefixer
   # - octopress-minify-html
-  - jekyll-paginate
+  # - jekyll-paginate
 
 github:
   repo: gethinoakes/gethinoakes.github.io
   branch: master
+
+bitly:
+  username: gethinoakes
+  api_key: R_64089cf535ff43a7b0c3501df2856111
