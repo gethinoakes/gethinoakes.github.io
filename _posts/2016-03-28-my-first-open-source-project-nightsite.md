@@ -7,6 +7,8 @@ desc: ""
 keywords: "NightSite, GitHub, open source, flux, javascript, css, jquery"
 ---
 
+* This no longer functions
+
 Even though this is extremely simple, it's pretty exciting. My first open source 'project' on GitHub. I put project in single quotes because as I said it is extremely simple, and I'm unsure at this point if there's anything more I can add to it (although I do have some ideas, I'm not sure if they are achievable).
 
 I wanted to make this site easier on the eyes for anyone visiting between the hours of 7pm and 7am. As this site is mainly white, my first thought was to create a dark theme that would be applied during those hours.
