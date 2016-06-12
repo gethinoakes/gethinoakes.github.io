@@ -1,0 +1,17 @@
+---
+layout: home
+---
+
+<ul class="post_list">
+  {% for post in paginator.posts %}
+  <li class="post">
+    <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+    <div class="post_meta">
+      <span><i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span><i class="fa fa-inbox"></i>{{ post.category }}</span>
+    </div>
+    <p class="post_excerpt">{{ post.content | strip_html | truncatewords: 50 }}</p>
+  </li>
+  {% endfor %}
+  {% include pagination.html %}
+</ul>
