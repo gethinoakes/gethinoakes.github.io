@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="post" style="background-image: url('{{ site.baseurl }}/img/posts/{{ page.img }}');">
+
+	<div class="post_overlay single">
+
+		<nav class="post_nav">
+			<a class="previous_post" href="{{page.previous.url}}">
+			{% if page.previous.url %}
+				<i class="fa fa-angle-left"></i> {{page.previous.title | truncatewords: 4}}
+			{% endif %}
+			</a>
+
+			<div class="site_pages">
+				<a href="{{ site.url }}">Home</a>
+		      <!-- {% for page in site.extrapages %}
+		          <a href="{{ page.url }}">{{ page.title }}</a>
+		      {% endfor %} -->
+			</div>
+
+			<a class="next_post" href="{{page.next.url}}">
+			{% if page.next.url %}
+				{{page.next.title | truncatewords: 4}} <i class="fa fa-angle-right"></i>
+			{% endif %}
+			</a>
+
+		</nav>
+
+		<div class="post_content">
+			<span class="post_meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+			<h1 class="post_title">{{ page.title }}</h1>
+		</div>
+	</div>
+
+</div>
+
+<article class="post_content single">
+	{{ content }}
+
+	{% include share_post.html %}
+
+	{% include related_posts.html %}
+
+	{% include disqus.html %}
+</article>

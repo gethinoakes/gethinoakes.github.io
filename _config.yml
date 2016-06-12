@@ -1,0 +1,31 @@
+# Site settings
+title: Gethin Oakes
+email: hello@gethinoakes.com
+description: > # this means to ignore newlines until "baseurl:"
+  A blog by a software developer, but not entirely defined by that fact.
+  You can expect posts on programming, technology, apple, opinions and probably some rants.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://gethinoakes.com" # the base hostname & protocol for your site
+twitter_username: gethinoakes
+github_username:  gethinoakes
+
+# Build settings
+markdown: kramdown
+permalink: :title
+paginate: 10
+paginate_path: "/page:num/"
+include: ["_extrapages"]
+
+collections:
+  - extrapages
+
+sass:
+  style: compressed
+
+gems:
+  - octopress-autoprefixer
+  - jekyll-paginate
+
+github:
+  repo: gethinoakes/gethinoakes.github.io
+  branch: master
