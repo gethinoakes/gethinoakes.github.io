@@ -1,11 +1,19 @@
-
 <header>
-	<p><span>Welcome</span>, I'm <span>Gethin</span>. I'm a <span>software developer</span> and this is my <span>blog</span>. You can expect posts on programming, technology, apple, opinions and probably some <span>rants.</span> You can contact me via <br><span><a href="https://twitter.com/gethinoakes" target="_blank"><img src="{{site.url}}/img/twitter.png"> twitter</a></span> or <span><a href="mailto:hello@gethinoakes.com?subject=gethinoakes.com"><img src="{{site.url}}/img/email.png"> email</a></span> <span class="small">(I'm available for hire).</span></p>
+  <img href="{{ site.url }}/" src="{{ site.baseurl }}/img/profile.jpg" alt="me">
+
+  <p>
+    <span>Welcome</span>, my name is <span>Gethin Oakes</span>. I'm a <span>software developer</span> and this is my <span>blog</span>.
+    You can expect posts on programming, technology, apple, opinions and probably some <span>rants.
+    </span> You can contact me via <span><a href="https://twitter.com/gethinoakes" target="_blank"><i class="fa fa-twitter"></i> twitter</a></span> or
+    <span><a href="mailto:hello@gethinoakes.com?subject=gethinoakes.com"><i class="fa fa-paper-plane"></i> email</a></span>
+    (I'm available for hire).
+  </p>
 </header>
-{% if page.path != 'index.html' %}
-<nav>
-	<ul>
-		<li><a href="{{ site.url }}">posts</a></li>
-	</ul>
-</nav>
-{% endif %}
+
+<!-- {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+<nav class="page_nav">
+    <ul>
+      <li><a {% if location == '{{ site.baseurl }}' %}class="active" {% endif %}href="/">Blog</a></li>
+      <li><a {% if location == 'projects' %}class="active" {% endif %}href="/projects/">Projects</a></li>
+    </ul>
+</nav> -->

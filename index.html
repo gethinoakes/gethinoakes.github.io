@@ -1,15 +1,19 @@
 ---
-layout: default
+layout: home
+tags: gethin, oakes, gethin oakes, blog, software, developer, software developer, programming, technology, apple, ios, javascript, angular, jekyll
 ---
 
-
-  {% for post in site.posts %}
-  <div class="post">
-    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <div class="post_meta">
-      <span><img src="{{site.url}}/img/cal.png">{{ post.date | date: "%b %-d, %Y" }}</span>
-      {% if post.category %}<span><img src="{{site.url}}/img/cat.png">{{ post.category }}</span>{% endif %}
+{% for post in paginator.posts %}
+<a class="post" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{ site.baseurl }}/img/posts/{{ post.img }}');">
+  <div class="post_overlay">
+    <div class="post_content">
+      <span class="post_meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time> - {{ post.category }}</span>
+<!--      <span class="post_tags"></span> -->
+      <h1 class="post_title">{{ post.title | truncatewords: 5 }}</h1>
+      <p class="post_excerpt">{{ post.excerpt | strip_html | truncatewords: 10 }}</p>
     </div>
-    <p>{{ post.content | truncatewords: 100 | strip_html }}</p>
   </div>
-  {% endfor %}
+</a>
+{% endfor %}
+
+{% include pagination.html %}

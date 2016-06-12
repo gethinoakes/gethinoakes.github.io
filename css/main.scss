@@ -1,67 +1,143 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,700|Ubuntu+Mono), "syntax-highlighting";
+/*------------
+imports
+------------*/
+@import "reset", "syntax-highlighting"; // "base", "layout"
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:600,400);
 
 
 /*------------
-top-level
+variables
 ------------*/
-html {
-	background: darken(#fff, 5) !important; //EDF2F4
-}
+$heading_font: "Helvetica Neue", Helvetica, 'Source Sans Pro', Arial, sans-serif;
+$heading_font-size: 2em;
+$heading_font-weight: 600;
 
-body {
-	// background: red !important;
-}
+$body_font: 'Open Sans', sans-serif;
+$body_font-size: 1em;
+$body_font-weight: normal;
+$body_font-color: #000;
 
-body {
-	// background: darken(#fff, 5); //EDF2F4
-	// font-family: Helvetica;
-	font-family: 'Open Sans', sans-serif;
-	// line-height: 2;
-	color: lighten(#000, 25); //2E2F2F
-}
+$spacing: 30px;
 
+
+/*------------
+fonts
+------------*/
 h1, h2, h3, h4 {
-	font-family: 'Droid Serif', serif;
-	line-height: 1.2;
-	font-weight: bold;
-	color: lighten(#000, 15);
-
-	a:hover {
-		color: #EF233C;
-	}
-}
-
-h1 {
-	font-size: 3em;
+    font-family: $heading_font;
+    font-size: $heading_font-size;
+    font-weight: $heading_font-weight;
+    text-transform: uppercase;
+    padding: $spacing / 2 0;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: $heading_font-size * 0.85;
 }
 
-p, ul {
-	line-height: 2;
-	font-size: 1.2em;
+h3 {
+	font-size: $heading_font-size * 0.65;
+}
+
+h4 {
+	font-size: $heading_font-size * 0.50;
+}
+
+p, ul, a, time {
+    font-family: $body_font;
+    font-size: $body_font-size;
+    font-weight: $body_font-weight;
+    text-decoration: none;
+    line-height: 1.5;
+    color: $body_font-color;
+    padding: 0 0 $spacing / 3 0;
+}
+
+li {
+	list-style: disc;
+    margin-left: 20px;
 }
 
 a {
-	text-decoration: none;
-	color: lighten(#000, 15); //151515
-	transition: all 0.5s ease;
+	border-bottom: 2px solid transparent;
+    transition: 0.5s ease;
+    font-weight: 600;
+    color: #F50E23;
+
+    &:hover {
+    	color: darken(#F50E23, 50%);
+    }
+}
+
+.emoji {
+	width: 15px !important;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.highlight {
+	border-radius: 3px;
+}
+
+.highlight, code {
+	background: #fafafa !important;
+	font-family: monospace !important;
+	// border: 2px solid #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+	// outline: 1px solid #f1f1f1;
+}
+
+code {
+	outline: none;
+	box-shadow: none;
+	line-height: 1.5;
 }
 
 
 /*------------
-wrapper
+code formatting
 ------------*/
-.wrapper {
-	width: 80%;
-	max-width: 1000px;
-	margin: 0 auto;
+code, pre {
+	font-family: "Courier New", Courier, monospace;
+    font-size: $body_font-size * 0.95;
+    margin: 0 0 $spacing / 3 0;
+    // border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+/*------------
+main
+------------*/
+main {
+	width: 100vw;
+	&.posts {
+		padding-top: $spacing/2;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 
 
@@ -69,196 +145,339 @@ wrapper
 header
 ------------*/
 header {
-	color: lighten(#000, 15);
-	padding: 30px 30px;
-	text-align: center;
+	max-width: 650px;
+	margin: 25px auto;
+	font-family: $heading_font;
 
-	p {
-		line-height: 1.5;
+	img {
+		width: 100px;
+		border-radius: 50%;
+		float: left;
 	}
 
-	span {
-		font-weight: bold;
-		color: #000;
+	p {
+		color: lighten($body_font-color, 15);
+		width: 650 - 120px;
+		float: left;
+		padding-left: $spacing - 10;
 
-		&.small {
-			font-weight: normal;
-			font-size: 75%;
+		span, a, a:hover  {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: $body_font-color;
+			transition: opacity 0.5s;
+		}
+
+		a:hover {
+			opacity: 0.75;
+		}
+
+		.fa-twitter {
+			color: #55acee;
+		}
+
+		.fa-paper-plane {
+			color: #DF2935;
 		}
 	}
 
-	a:hover {
-		color: #EF233C;
+}
+
+.page_nav {
+	clear: both;
+
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0 15px 0;
+
+	li {
+		display: inline;
+		padding-right: 15px;
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+
+	a {
+		font-size: $body_font-size * 0.85;
+		font-weight: 600;
+		padding-bottom: 2px;
+
+		&:hover {
+			border-bottom: 2px solid currentcolor;
+		}
+
+		&.active {
+			color: blue;
+		}
+	}
+
+}
+
+
+/*------------
+home-posts
+------------*/
+.post {
+	min-width: 350px;
+	height: 300px;
+	background-position: center center;
+	background-size: cover;
+	flex-grow: 3;
+	padding: 0;
+	border: none;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:nth-of-type(even) {
+		flex-basis: 30%;
+	}
+
+	&:nth-of-type(odd) {
+		flex-basis: 35%;
+	}
+
+	@media screen and (max-width: 1170px) {
+		&:nth-of-type(even), &:nth-of-type(odd) {
+			flex-basis: 50%;
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		&:nth-of-type(even), &:nth-of-type(odd) {
+			flex-basis: 100%;
+		}
 	}
 }
 
-nav {
+.post_overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	transition: all 0.25s ease;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.25);
+		box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.20);
+		cursor: pointer;
+	}
+
+	&.single {
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: none;
+		cursor: default;
+	}
+}
+
+.post_content {
+	color: #fff;
 	text-align: center;
-	padding-bottom: 30px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	margin: 0 auto;
+	padding: 0 $spacing / 2;
 
-	li a {
-		border-bottom: 1px solid darken(#fff, 25);
-		border-radius: 5px;
-		padding: 10px;
-		background: darken(#fff, 4);
-		transition: all 0.5s ease;
+	.post_meta {
+		font-size: $body_font-size * 0.85;
+		text-transform: uppercase;
 
-		&:hover {
-			// border-bottom: 1px solid darken(#ccc, 25);
-			background: darken(#fff, 1);
+		time {
+			color: #fff;
 		}
+	}
+
+	.post_title {
+
+	}
+
+	p {
+		text-shadow: none;
+	}
+
+	.post_excerpt {
+		color: #fff;
 	}
 }
 
 
 /*------------
-post
+pagination
 ------------*/
-.post {
-	background: #fff;
-	padding: 20px;
-	margin-bottom: 40px;
+.pagination {
+	clear: both;
+	width: 100vw;
+	padding: $spacing/2 0;
+	display: flex;
+	flex-direction: row;
 
-	a {
-		border-bottom: 1px solid darken(#fff, 15);
-		border-radius: 3px;
-		padding: 3px 6px;
+	.previous_page, .next_page {
+		flex-basis: 25%;
+	}
 
-		&:hover {
-			background: darken(#fff, 8);
-		}
-}
+	.previous_page {
+		text-align: right;
+		// padding-left: 15px;
+	}
 
-	h2, .post_meta {
+	ul {
+		flex-basis: 50%;
 		text-align: center;
-	}
+		padding: 0;
 
-	h2 a {
-		border: none;
-
-		&:hover {
-			background: none;
-		}
-	}
-
-	&.post_full {
-		h1, .post_meta {
-			text-align: center;
+		li {
+			display: inline;
+			list-style-type: none;
+			padding: 3px;
+			margin: 0 5px 0 0;
+			border: 1px solid lighten(#aaa, 25);
+			border-radius: 3px;
+			font-size: $body_font-size * 0.75;
 		}
 
-		.post_meta {
-			padding: 10px 0 20px 0;
-		}
+		a li {
+			border: 1px solid lighten(#aaa, 25);
+			transition: border 0.25s ease;
 
-		h2 {
-			font-size: 2em;
-			text-align: left;
-			padding: 20px 0 5px;
-
-			&:first-of-type {
-				padding-top: 0;
+			&:hover {
+				border: 1px solid lighten(#aaa, 10);
 			}
 		}
+	}
 
-		p {
-			margin-bottom: 15px;
+	.next_page {
+		text-align: left;
+		// padding-right: 15px;
+	}
+}
+
+
+/*------------
+full post
+------------*/
+.post_nav {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.75);
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+
+	a, a:hover {
+		color: #fff;
+		text-decoration: none;
+		font-size: $body_font-size * 0.85;
+	}
+
+	a:hover {
+		opacity: 0.75;
+	}
+
+	.previous_post, .site_pages, .next_post {
+		flex-grow: 1;
+		padding: 5px 0;
+	}
+
+	.previous_post, .next_post {
+		flex-basis: 25%;
+		font-weight: normal;
+	}
+
+	.previous_post i {
+		padding: 0 5px 0 15px;
+	}
+
+	.site_pages {
+		text-align: center;
+		flex-basis: 50%;
+
+		a {
+			padding: 0 10px;
 
 			&:last-of-type {
-				margin-bottom: 0;
+				padding: 0;
 			}
-		}
-
-		ul {
-			list-style-type: disc;
-			margin-left: 22px;
-		}
-
-		img {
-			width: 100%;
 		}
 	}
 
-	.post_meta {
-		display: block;
-		padding: 15px 0 10px 0;
-		margin-left: 22px;
+	.next_post {
+		text-align: right;
 
-		span {
-			padding-right: 35px;
-		}
-
-		img {
-			width: 16px;
-			position: absolute;
-			margin: 0 0 0 -22px;
+		i {
+			padding: 0 15px 0 5px;
 		}
 	}
 }
 
-.post_footer {
-	width: 80%;
-	margin: 30px auto;
-	text-align: center;
+.post_content.single {
+	padding: 50px 0;
+    width: 80vw;
+    max-width: 800px;
+    text-align: left;
+    text-shadow: none;
+    color: #000;
 
-	&:last-of-type {
-		margin-bottom: 0;
+	img {
+	    width: 100%;
+	    height: inherit;
+	    border: none;
+    }
+}
+
+.post_section {
+	padding: 5px 0;
+
+	.header {
+		padding: 15px 0 5px 0;
+		border-bottom: 2px solid #f0f0f0;
 	}
 
-	.separator {
-		display: block;
-		margin-bottom: 20px;
-		font-size: 2em;
-		line-height: 0;
-		letter-spacing: 5px;
-		color: darken(#fff, 10);
-	}
-
-	p {
-		font-size: 0.9em;
+	.social, .related_posts {
+		padding: $spacing / 3 0 0 0;
 	}
 
 	.social {
-		padding-top: 10px;
-	}
+		font-size: $body_font-size * 0.85;
 
-	a {
-		border: none;
+		a {
+			padding-right: 10px;
+			border: none;
 
-		&:hover {
-			background: none;
+			&:hover {
+				border: none;
+				opacity: 0.85;
+			}
+
+			.fa-twitter-square {
+				color: #55acee;
+			}
+
+			.fa-facebook-square {
+				color: #3b5998;
+			}
+
+			.fa-google-plus-square {
+				color: #dc4e41;
+			}
+
+			.fa-envelope {
+				color: #DF2935;
+			}
 		}
 	}
 
-	img {
-		width: 30px !important;
-		transition: all 0.2s ease;
+	.related_posts {
+		display: flex;
+		flex-direction: row;
 
-		&:hover {
-			transform: translateY(2px) scale(0.99);
-		}
-	}
-
-	.recent {
-		padding-top: 8px;
-		line-height: 1;
-		font-size: 1em;
-
-		li {
-			display: inline-block;
-			padding-right: 15px;
-
-			&:last-of-type {
-				padding-right: 0;
-			}
-
-			a:hover {
-				color: #EF233C;
-			}
+		div {
+			flex-basis: percentage(100/3);
 
 			.meta {
-				font-size: 0.8em;
-				color: darken(#fff, 50);
-				padding-top: 3px;
+				font-size: $body_font-size * 0.85;
+				color: #aaa;
 			}
 		}
 	}

@@ -1,18 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Gethin Oakes, Software Developer
+title: Gethin Oakes
 email: hello@gethinoakes.com
 description: > # this means to ignore newlines until "baseurl:"
-  Welcome, my name is Gethin Oakes. I'm a software developer and this is my blog. You can expect posts on programming, technology, apple, opinions and probably some rants.
-keywords: gethin, oakes, gethin oakes, freelance, freelance developer, developer, design, development, jekyll, sass, front end developer, front-end developer, blog, software, software developer, programming, technology, apple, ios, javascript, angular
+  A blog by a software developer, but not entirely defined by that fact.
+  You can expect posts on programming, technology, apple, opinions and probably some rants.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://localhost:4000" # dev mode
 url: "http://gethinoakes.com" # the base hostname & protocol for your site
 twitter_username: gethinoakes
 github_username:  gethinoakes
@@ -20,21 +12,20 @@ github_username:  gethinoakes
 # Build settings
 markdown: kramdown
 permalink: :title
-# paginate: 8
-# paginate_path: "/page:num/"
+paginate: 10
+paginate_path: "/page:num/"
+include: ["_extrapages"]
+
+collections:
+  - extrapages
 
 sass:
   style: compressed
 
 gems:
-  # - octopress-autoprefixer
-  # - octopress-minify-html
-  # - jekyll-paginate
+  - octopress-autoprefixer
+  - jekyll-paginate
 
 github:
   repo: gethinoakes/gethinoakes.github.io
   branch: master
-
-bitly:
-  username: gethinoakes
-  api_key: R_64089cf535ff43a7b0c3501df2856111
