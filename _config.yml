@@ -1,0 +1,40 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Gethin Oakes, Software Developer
+email: hello@gethinoakes.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome, my name is Gethin Oakes. I'm a software developer and this is my blog. You can expect posts on programming, technology, apple, opinions and probably some rants.
+keywords: gethin, oakes, gethin oakes, freelance, freelance developer, developer, design, development, jekyll, sass, front end developer, front-end developer, blog, software, software developer, programming, technology, apple, ios, javascript, angular
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # dev mode
+# url: "http://gethinoakes.com" # the base hostname & protocol for your site
+twitter_username: gethinoakes
+github_username:  gethinoakes
+
+# Build settings
+markdown: kramdown
+permalink: :year/:title
+minify_html: false
+paginate: 10
+
+sass:
+  style: compressed
+
+gems:
+  - octopress-minify-html
+  - octopress-autoprefixer
+  - jekyll-paginate
+
+bitly:
+  username: gethinoakes
+  api_key: R_64089cf535ff43a7b0c3501df2856111
+
+github:
+  repo: gethinoakes/gethinoakes.github.io
+  branch: master

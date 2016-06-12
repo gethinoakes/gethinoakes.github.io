@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+<section class="post">
+  <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  <div class="meta">
+    <span><i class="fa fa-calendar-o" aria-hidden="true"></i>{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% if post.tags %}<span><i class="fa fa-tags" aria-hidden="true"></i>{{ post.tags | join: ', '  }}</span>{% endif %}
+  </div>
+  <p>{{ post.content | truncatewords: 100 | strip_html }}</p>
+</section>
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="hvr-icon-back">
+    </a>
+  {% else %}
+    <span class="hvr-icon-back hide">
+    </span>
+  {% endif %}
+
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="hvr-icon-forward">
+    </a>
+  {% else %}
+    <span class="hvr-icon-forward hide">
+    </span>
+  {% endif %}
+</div>

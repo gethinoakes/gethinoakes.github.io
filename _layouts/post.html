@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="post post--full">
+  <div class="meta">
+    <span><i class="fa fa-calendar-o" aria-hidden="true"></i>{{ page.date | date: "%b %-d, %Y" }}</span>
+    {% if page.tags %}<span><i class="fa fa-tags" aria-hidden="true"></i>{{ page.tags | join: ', ' }}</span>{% endif %}
+  </div>
+	{{ content }}
+
+  {% include posts/post_footer.html %}
+  {% include posts/related_posts.html %}
+
+</article>
+
+{% include posts/disqus.html %}
